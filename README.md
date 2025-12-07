@@ -2,10 +2,72 @@
 
 ## Project Overview
 
+- 생활 인프라 지도 플랫폼은 화면에 나오는 지도에서 특정 위치를 클릭하면 가장 가까이에 있는 생활 인프라의 위치를 알려주는 지도 플랫폼입니다.
+- 클릭한 위치를 기준으로 5분, 10분, 15분만에 도달할 수 있는 구역을 알려주는 등시선 또한 표현됩니다.
+- 클릭한 위치에서 각각의 생활 인프라 까지의 거리 및 가중치에 따라 '인프라 접근성 지수'(0 ~ 100점)를 도출합니다.
+
 ## How to use
+
+1. 아래 나오는 오픈 소스 소프트웨어들을 다운로드합니다.
+   
+   ```tsx
+    pip install osmnx
+    pip install shapely
+    pip install folium
+    pip install streamlit
+    pip install scikit-learn
+    ```
+
+2. cmd 창에서 코드들이 있는 폴더로 이동합니다.
+
+    ```tsx
+    cd C:\Users.....
+    ```
+
+3. 다음 명령어를 cmd창에 입력합니다.
+
+    ```tsx
+    streamlit run main.py
+    ```
 
 ## Results
 
+###사이드바 설정
+
+- 연령대별 추천 프리셋을 선택하거나, 각 시설별 가중치를 직접 조정할 수 있습니다.
+
+- 특정 지역명을 입력하면 그 지역으로 이동합니다.
+
+- 등시선을 표시할 때 사용되는 자신의 걸음 속도를 설정합니다.(평균 75m/min)
+
+
+
+- 분석할 위치를 클릭하면 해당 지점의 좌표(위도 및 경도)가 뜨면서 분석을 시작합니다.
+
+- 분석 결과(예시)
+
+  
+
 ## Code Description
 
+### 등시선 계산 함수
+
+    ```tsx
+    def get_isochrone(Graph, center_node, trip_times=[5, 10, 15], speed=75):
+    ```
+    
+### 최단거리 분석 함수
+
+    ```tsx
+    def get_nearest_distance(Graph_proj, center_node, points_proj, target_key, target_val):
+    ```
+
+### 점수 측정 함수
+
+    ```tsx
+    def get_score(lat, lon, user_weights=None, dist=3000):
+    '''
+
 ## Resources Used
+
+## Made by
