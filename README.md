@@ -38,7 +38,7 @@ Tip: 실행을 종료하려면 터미널에서 Ctrl + C를 누르세요.
 
 ![images](https://github.com/minho-05/oss_project/blob/main/images/result%201.png)
 
-### 1️⃣ 사이드바 설정
+#### 1. 사이드바 설정
 
 - 연령대별 추천: 청년층, 중장년층 등 맞춤형 가중치 프리셋 제공
 - 직접 설정: 슬라이더를 통해 각 시설별 중요도(가중치)를 사용자가 정의 가능
@@ -46,7 +46,7 @@ Tip: 실행을 종료하려면 터미널에서 Ctrl + C를 누르세요.
 ![images](https://github.com/minho-05/oss_project/blob/main/images/result%202.png)
 ![images](https://github.com/minho-05/oss_project/blob/main/images/result%203.png)
 
-### 2️⃣ 지역 이동 및 보행 속도 설정
+#### 2. 지역 이동 및 보행 속도 설정
 
 - 지역 검색: 특정 지역명(예: Yeouido, Seoul)을 입력하여 지도 이동
 - 보행 속도: 본인의 걷는 속도에 맞춰 등시선 범위 조정 (기본: 75m/min)
@@ -54,13 +54,13 @@ Tip: 실행을 종료하려면 터미널에서 Ctrl + C를 누르세요.
 ![images](https://github.com/minho-05/oss_project/blob/main/images/result%204.png)
 ![images](https://github.com/minho-05/oss_project/blob/main/images/result%205.png)
 
-### 3️⃣ 위치 분석
+#### 3. 위치 분석
 
 - 지도상의 특정 지점을 클릭하면 해당 좌표(위도, 경도)를 기준으로 분석을 시작합니다.
 
 ![images](https://github.com/minho-05/oss_project/blob/main/images/result%206.png)
 
-### 4️⃣ 분석 결과(예시)
+#### 4. 분석 결과(예시)
 
 - 종합 점수 및 인프라별 최단 거리 표기
 - 시각화: 등시선(5/10/15분) 및 시설물 마커 표시
@@ -70,7 +70,7 @@ Tip: 실행을 종료하려면 터미널에서 Ctrl + C를 누르세요.
 
 ## Major Functions
 
-### 등시선 계산 함수
+#### 등시선 계산 함수
 
 - 도로망 네트워크를 기반으로 도보 이동 가능 범위를 다각형(Polygon)으로 계산합니다.
 
@@ -80,7 +80,7 @@ Tip: 실행을 종료하려면 터미널에서 Ctrl + C를 누르세요.
         return isochrone_polys
     ```
 
-### 최단거리 분석 함수
+#### 최단거리 분석 함수
 
 - 선택된 지점과 특정 인프라 간의 최단 도보 거리를 계산합니다.
 
@@ -90,7 +90,7 @@ Tip: 실행을 종료하려면 터미널에서 Ctrl + C를 누르세요.
         return min_dist, best_node
     ```
 
-### 점수 측정 함수
+#### 점수 측정 함수
 
 - 거리 데이터와 가중치를 종합하여 최종 접근성 점수를 도출합니다.
 
