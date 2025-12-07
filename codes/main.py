@@ -5,7 +5,7 @@ import geopandas as gpd
 from function import get_score, get_isochrone, point_config
 
 st.set_page_config(layout="wide", page_title="생활 인프라 분석기")
-st.title("🏡 생활 편의성 지도 플랫폼")
+st.title("🏡 생활 인프라 지도 플랫폼")
 st.markdown("---")
 
 # 사이드바 입력
@@ -223,4 +223,5 @@ if st.session_state.get('analysis_result'):
         st.caption("※ 거리는 도보 이동 기준 최단 거리입니다.")
 
     else:
+
         st.error("데이터를 불러오지 못했습니다. (도로망이 없는 곳일 수 있음)")
