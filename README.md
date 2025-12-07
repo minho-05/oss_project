@@ -36,9 +36,9 @@ Tip: 실행을 종료하려면 터미널에서 Ctrl + C를 누르세요.
 
 ## 💻Results
 
-![images](
+![images](https://github.com/minho-05/oss_project/blob/main/images/result%201.png)
 
-###1️⃣ 사이드바 설정
+### 1️⃣ 사이드바 설정
 
 - 연령대별 추천: 청년층, 중장년층 등 맞춤형 가중치 프리셋 제공
 - 직접 설정: 슬라이더를 통해 각 시설별 중요도(가중치)를 사용자가 정의 가능
